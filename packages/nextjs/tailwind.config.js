@@ -76,8 +76,25 @@ module.exports = {
   },
   theme: {
     extend: {
+      colors: {
+        display: ["group-hover"],
+        axo: "#C25D80",
+        lote: "#2E6F9F",
+        sun: "#F2C572",
+      },
       fontFamily: {
-        "space-grotesk": ["Space Grotesk", "sans-serif"],
+        silk: ["Silkscreen"],
+        ral: ["Raleway"],
+      },
+      screens: {
+        "2xl": "1601px",
+        "h-sm": { raw: "(min-height: 500px)" },
+        "h-md": { raw: "(min-height: 850px)" },
+        "h-lg": { raw: "(min-height: 1000px)" },
+      },
+      borderRadius: {
+        md: "32px",
+        in: "20px",
       },
       boxShadow: {
         center: "0 0 12px -2px rgb(0 0 0 / 0.05)",

@@ -24,16 +24,15 @@ const Transfers: NextPage = () => {
       <div className="flex items-center flex-col flex-grow pt-10">
         <div className="px-5">
           <h1 className="text-center mb-8">
-            <span className="block text-4xl font-bold">All Transfers Events</span>
+            <span className="block text-4xl font-bold">Volunteer NFTs minted</span>
           </h1>
         </div>
         <div className="overflow-x-auto shadow-lg">
           <table className="table table-zebra w-full">
             <thead>
               <tr>
-                <th className="bg-primary">Token Id</th>
-                <th className="bg-primary">From</th>
-                <th className="bg-primary">To</th>
+                <th className="bg-primary">VolunteerNFT id</th>
+                <th className="bg-primary">Address</th>
               </tr>
             </thead>
             <tbody>
@@ -48,9 +47,7 @@ const Transfers: NextPage = () => {
                   return (
                     <tr key={index}>
                       <th className="text-center">{event.args.tokenId?.toString()}</th>
-                      <td>
-                        <Address address={event.args.from} />
-                      </td>
+          
                       <td>
                         <Address address={event.args.to} />
                       </td>

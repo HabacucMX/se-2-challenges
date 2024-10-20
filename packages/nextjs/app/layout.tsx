@@ -9,8 +9,8 @@ const baseUrl = process.env.VERCEL_URL
   : `http://localhost:${process.env.PORT || 3000}`;
 const imageUrl = `${baseUrl}/thumbnail.jpg`;
 
-const title = "Challenge #0 | SpeedRunEthereum";
-const titleTemplate = "%s | SpeedRunEthereum";
+const title = "Axolovision";
+const titleTemplate = "%s | ";
 const description = "Built with 🏗 Scaffold-ETH 2";
 
 export const metadata: Metadata = {
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
 const ScaffoldEthApp = ({ children }: { children: React.ReactNode }) => {
   return (
     <html suppressHydrationWarning>
-      <body>
+      <body className="font-ral">
         <ThemeProvider enableSystem>
           <ScaffoldEthAppWithProviders>{children}</ScaffoldEthAppWithProviders>
         </ThemeProvider>
